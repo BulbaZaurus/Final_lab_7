@@ -28,11 +28,11 @@ public class Server extends Messenger {
     private static DatagramChannel channel;
     private static Connection connection;
     private static Statement statement;
-    private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
-    private static final String NAME = "postgres";
-    private static final String PASS = "root";
+    private static final String URL = "jdbc:postgresql://хост/имярек";
+    private static final String NAME = "";
+    private static final String PASS = "";
     static Controller controller ;
-    private static ExecutorService FTPProcessing= Executors.newFixedThreadPool(core);//отвечает за  обработку полученного запроса
+    private static ExecutorService FTPProcessing= Executors.newFixedThreadPool(core);//
     private static ForkJoinPool forkJoinPool=new ForkJoinPool();
     public static Connection getConnection() {
         return connection;
